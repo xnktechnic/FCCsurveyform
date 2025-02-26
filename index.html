@@ -1,0 +1,58 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Favorit game genre Survey</title>
+  </head>
+  
+  <body>
+    <h1 id="title">Favorit game genre Survey</h1>
+    <p id="description"> Tell us which is your're favorit Game genre </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" type="text" required
+         placeholder="Enter your name">
+        </label>
+        <label id="email-label" for="email">Email <input id="email" type="email" required     placeholder="Enter your email">
+        </label>
+        <label id="number-label" for="number">Age (optional)<input id="number" min="10" max="130"
+         type="number" placeholder="18">
+        </label>
+      </fieldset>
+      
+       <fieldset>
+         <select id="dropdown" name="dropdown">
+           <option>Select genre</option>
+           <option>RPG</option>
+           <option>RTS</option>
+           <option>Platformer</option>
+           <option>MMORPG</option>
+           <option>Shooter</option>
+           <option>Other</option>
+        </select>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Would you Reccomend the Genre?</legend>
+        <label><input type="radio" name="reccomendation" value="yes"class="inline">Yes</label>
+        <label><input type="radio" name="reccomendation" value="no"class="inline">No</label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>How much do you Play per Week?</legend>
+        <label for="5HRS"><input id="5HRS" type="checkbox" value="1" class="inline"> 5 Hours</label>
+        <label for="10HRS"><input id="10HRS" type="checkbox" value="2"class="inline"> 10 Hours</label>
+        <labbel for="20HRS"><input id="20HRS" type="checkbox" value="3"class="inline"> 20 Hours</label>
+        <label for="20+HRS"><input id="20+HRS"type="checkbox" value="4"class="inline"> More than 20 Hours</Label>
+      </fieldset>
+      <fieldset>
+        <label for="fav_games">Which are you're favorit games?</label>
+        <textarea id="fav_games" name="fav_games" rows="5" 
+        placeholder="Enter your games here..."></textarea>
+        </textarea>
+        <input type="submit" id="submit">
+    </fieldset>
+    </form>
+  </body>
+</html>
